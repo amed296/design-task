@@ -1,0 +1,38 @@
+.big-heading {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background: #10a9ff;
+    color: #fff;
+    padding: 3% 2%;
+    border-radius: .1em;
+}
+
+::selection {
+    background: #10a9ff;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: .5em;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.6);
+    border-radius: .5em;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0,0,0,0.8);
+}
+
+#intro {
+    position: relative;
+    top: 22vh;
+    width: 100vw;
+    height: 35vh;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}

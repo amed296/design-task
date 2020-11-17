@@ -1,0 +1,58 @@
+<%- include("templates/header") %>
+
+<body>
+    <!--? NavBar-->
+    <%- include("templates/navbar") %> 
+    <!--! Main Body-->    
+    <div class="main-section-home">
+        <div class="news-section">
+            <div class="news-title">Latest Aviation News</div>
+            <div class="news-all">
+                <% for(var i = 0; i < 3; i++) { %>
+                    <div class="news">
+                        <div class="news-heading"><%= headings[i] %> </div>
+                        <div class="news-img"><img src=<%= img[i] %> alt=""></div>
+                        <div class="description"><%= des[i] %> </div>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="chatnow">
+                <div class="chat-in">
+                    <p>Chat now with the communtiy</p>
+                    <a href="/community">
+                        <svg id="arrow_right" width="126" height="60" viewBox="0 0 126 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M123.866 32.8284C125.428 31.2663 125.428 28.7337 123.866 27.1716L98.4098 1.71573C96.8477 0.153631 94.315 0.153631 92.7529 1.71573C91.1908 3.27783 91.1908 5.81049 92.7529 7.37258L115.38 30L92.7529 52.6274C91.1908 54.1895 91.1908 56.7222 92.7529 58.2843C94.315 59.8464 96.8477 59.8464 98.4098 58.2843L123.866 32.8284ZM0 34H121.037V26H0V34Z" fill="white"/>
+                        </svg>  
+                    </a>
+                     
+                </div>                 
+                <p>Ask a Question, Share Your Experince, Discuss With AvGeeks and others</p>                 
+            </div>
+            <div class="duty-free">
+                <div class="duty-free-heading">
+                    <span>Duty Free</span>
+                    <svg width="60" height="42" viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.10764 25.2814C6.10602 25.2824 6.10425 25.2831 6.10247 25.2842C5.45235 25.6221 5.16999 26.4028 5.45429 27.0784C5.73939 27.7563 6.498 28.1003 7.19574 27.8682L26.8672 21.3233L23.1889 27.3299C22.9217 27.7663 22.9782 28.3273 23.3271 28.7017C23.676 29.0759 24.2317 29.1718 24.6859 28.9356L28.5434 26.9312C28.6541 26.8737 28.7547 26.7983 28.8411 26.7079L40.2686 14.7709L54.3716 7.41218C59.7129 4.5329 59.0941 2.31956 58.7773 1.70997C58.5318 1.23727 57.9827 0.603462 56.7627 0.268313C55.5253 -0.0716785 53.8534 -0.0445566 51.6527 0.351293C50.9179 0.483351 50.5124 0.472211 50.083 0.460426C48.5734 0.419098 47.5493 0.52032 42.465 3.16228L14.6567 17.6135L3.8725 12.0168C3.46584 11.8058 2.982 11.8059 2.57534 12.0174L0.758173 12.9618C0.384118 13.1562 0.116935 13.508 0.0300805 13.9205C-0.056774 14.3331 0.0459016 14.7628 0.309694 15.0914L7.79468 24.4143L6.10764 25.2814Z" fill="#10A9FF"/>
+                        <path d="M57.3193 36.6069H4.67322C3.19282 36.6069 1.99268 37.8074 1.99268 39.2875C1.99268 40.7675 3.19282 41.968 4.67322 41.968H57.3193C58.7997 41.968 59.9999 40.7679 59.9999 39.2875C59.9997 37.8069 58.7997 36.6069 57.3193 36.6069Z" fill="#10A9FF"/>
+                    </svg>                        
+                </div>
+                <div class="duty-free-stat">Latest Items in the Store</div>
+                <div class="duty-free-items">
+                    <% for(let i = 0; i < 2; i++) { %>
+                        <div class="duty-free-item">
+                            <div class="df-title"><%= dfTitles[i] %> </div>
+                            <div class="df-img"><img src=<%= dfImgs[i] %> alt=""></div>
+                            <div class="df-price">$<%= dfPrices[i] %> </div>
+                        </div>
+                    <% } %>
+                </div>
+                <div class="see-more"><a href="/store">See More</a></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<%- include("templates/footer.ejs"); %> 
+</html>

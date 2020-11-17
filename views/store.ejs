@@ -1,0 +1,19 @@
+<%- include("templates/header") %> 
+<body>
+    <%- include("templates/navbar") %> 
+    <img src="/assets/dutyfreebg.jpg" alt="" id="intro">
+    <div class="main-store">
+        <% for(let i = 0; i < itemsHeadings.length; i++) { %>
+            <div class="item">
+                <div class="store-item-heading"><%= itemsHeadings[i] %></div>
+                <div class="store-item-img"><img src=<%= itemsImgs[i] %>  alt=""></div>
+                <div class="store-item-price">$<%= itemsPrices[i] %></div>
+            </div>
+        <% } %> 
+    </div>
+
+    <p id="para-contact"><a class="big-heading" href="https://blog.globalair.com/post/2019/06/12/10-gift-ideas-for-pilots-and-aviation-enthusiasts" target="blank">Interested?</a></p>
+
+    <%- include("templates/footer") %> 
+</body>
+</html>

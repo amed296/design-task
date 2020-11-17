@@ -1,0 +1,91 @@
+.main-section {
+    position: relative;
+    top: 26vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro {
+    box-shadow: 0px 10px 10px #c28842bd;
+}
+
+.who {
+    padding-left: 3%;
+    width: 50%;
+    height: max-content;
+}
+
+.who-heading {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #323232;
+}
+
+.who-info {
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    line-height: 30px;
+    color: #858383;
+}
+.who-info > .big-heading {
+    transform: translateY(30vh);
+    position: absolute;
+}
+.channel-links {
+    padding-top: 10vh;
+    margin-top: 40vh;
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 10px solid #10a9ff;
+    border-radius: .1em;
+}
+
+.channel-links > a {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #323232;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 2%;
+}
+
+.channel-links > a:hover {
+    background: #10a9ff;
+    color: #fff;
+    box-shadow: 0px 10px 10px #10a7ff79;;
+}
+
+.prove-body {
+    margin-top: 10%;
+    background: #10a9ff;
+}
+
+.prove-body > ul > li {
+    color: #fff;
+    padding-top: 4%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.prove-more-info {
+    width: 100%;
+    height: 20px;
+    background: #000;
+}
+
+.prove-more-info > p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}

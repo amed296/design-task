@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Poppins&family=Roboto:ital,wght@0,400;0,700;1,300;1,700&display=swap');
+@import url('/styles/uiElem.css');
+@import url('/styles/home.css');
+@import url('/styles/footer.css');
+@import url('/styles/info.css');
+@import url('/styles/store.css');
+@import url('/styles/todo.css');
+@import url('/styles/community.css');
+/** Fonts:
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    transition: all .4s ease;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/** Navbar*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 23vh;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+}
+.navlinks {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navlink > a {
+    text-decoration: none;
+    color: #323232;
+    font-size: 1.4vw;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+
+.navlink {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+    margin-left: 10px;
+}
+
+.navlink:hover { 
+    background: #10a9ff;
+    box-shadow: -10px 10px 1px #10a7ff79;
+}
+
+.navlink:hover > a {
+    color: #fff;
+}
+
+.logo {
+    width: 170px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > a > img {
+    width: 80%;
+    height: 80%;
+}
+
+.shrink-img {
+    transform: scale(.7);
+}
+
+/*! Main Body of intro page*/
+#body-home {
+    overflow: hidden;
+}
+.pageIntro {
+    width: 100vw;
+    height: 100vh;
+}
+
+.imgCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.short-nav {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: flex-end;
+}
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+.short-nav > div {
+    width: 30%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.short-nav > div:hover {
+    background: #10a9ff;
+    box-shadow: -10px 10px 1px #10a7ff79;
+}
+
+.introText {
+    width: 70%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 14vh;
+}
+.introText > span {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    letter-spacing: 11px;
+    transition: all 0s ease;
+    animation: flipInX 1s ease .3s;
+}
+
+.contact-me-home {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+    top: 90%;
+    right: 10%;
+}
+
+.contact-me-home > a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+

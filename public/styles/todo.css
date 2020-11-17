@@ -1,0 +1,60 @@
+.main-section-todo {
+    position: relative;
+    top: 26vh;
+    left: 1%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.todo-select {
+    align-self: flex-start;
+    width: 10vw;
+    height: 10vh;
+}
+.todo {
+    width: 70vw;
+    height: 30vh;
+    border: .5px solid #10a9ff;
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #10a9ff;
+}
+
+.todo-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.todo-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.selected {
+    background: #10a9ff;
+    transition: color 0.2s ease;
+    animation: jello 1s ease;
+    color: #fff;
+}
+
+hr {
+    border: 3px solid rgba(0,0,0,0.7);
+    width: 80vw;
+    height: 4px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.big-heading {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}

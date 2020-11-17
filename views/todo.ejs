@@ -1,0 +1,17 @@
+<%- include("templates/header") %> 
+<body>
+    <%- include("templates/navbar") %> 
+
+    <div class="main-section-todo">
+        <div class="big-heading">Todos</div>
+        <hr>
+        <% for(let i = 0; i < todos.length; i++) { %>
+            <input type="checkbox" class="todo-select" id=<%= i %> >
+            <div class="todo" id=<%= i %> >
+                <div class="todo-heading"><%= todos[i] %> </div>
+                <div class="todo-info"><%= todoInfo[i] %></div>
+            </div>
+        <% } %> 
+    </div>
+    <%- include("templates/footer") %> 
+</body>

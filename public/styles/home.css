@@ -1,0 +1,227 @@
+.main-section-home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.news-section {
+    position: relative;
+    top: 26vh;
+    width: 80vw;
+    height: 100%;
+    left: 3%;
+}
+
+.news-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: #000;
+    font-weight: bolder;
+    margin-top: 1%;
+}
+
+.news {
+    width: 40vw;
+    height: 100%;
+    border: 5px solid #323232;
+    border-radius: .5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.news-heading {
+    font-size: 1.5vw;
+    width: max-content;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #323232;
+    text-decoration: underline;
+}
+
+.news-img {
+    width: 300px;
+    height: 200px;
+}
+
+.news-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description {
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    color: #9c9c9c;
+}
+
+/** Section 2*/
+
+.section2 {
+    position: relative;
+    top: 26vh;
+    right: 2%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #323232;
+    border-radius: .5em;
+    box-shadow: -10px 10px rgba(0,0,0,0.4);
+}
+
+.chatnow {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: #10a9ff;
+    border-radius: .3em;
+}
+
+
+.chat-in {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chat-in > p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#arrow_right {
+    transform: scale(0.7);
+}
+#arrow_right:hover {
+    transform: translate(13px, 0px) scale(0.7);
+}
+.chatnow > p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+/** Duty free*/
+
+.duty-free {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.duty-free-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.duty-free-heading > span{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #323232;
+}
+
+.duty-free-stat {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #9c9c9c;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.duty-free-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.duty-free-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.df-title {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #9c9c9c;
+    align-self: center;
+}
+
+.df-img {
+    width: 200px;
+    height: 150px;
+    align-self: center;
+}
+
+.df-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(.8);
+}
+.df-img:hover > img {
+    transform: scale(1);
+}
+
+.df-price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #9c9c9c;
+}
+
+.see-more {
+    width: 80%;
+    height: 10%;
+    box-shadow: 0px -3px 10px #c4c4c4;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+}
+
+.see-more > a {
+    color: #9c9c9c;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+.see-more:hover {
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.see-more:hover > a {
+    color: #000;
+    font-size: 22px;
+}
